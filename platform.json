@@ -242,6 +242,12 @@
       "owner": "platformio",
       "version": "~1.10700.0"
     },
+    "tool-dfuutil": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.9.190708"
+    },
     "tool-mbctool": {
       "optional": true,
       "owner": "platformio",
