@@ -69,6 +69,12 @@
       "owner": "platformio",
       "version": "~1.7.6"
     },
+    "framework-arduino-samd-mattairtech": {
+      "type": "framework",
+      "optional": true,
+      "owner": "konistehrad",
+      "version": "https://github.com/konistehrad/ArduinoCore-samd.git"
+    },
     "framework-arduino-samd-moteino": {
       "type": "framework",
       "optional": true,
