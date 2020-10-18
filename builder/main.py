@@ -189,16 +189,6 @@ elif upload_protocol.startswith("dfu"):
     ]
 
     upload_actions = [env.VerboseAction("$UPLOADCMD", "Uploading $SOURCE")]
-    env.AddPostAction(
-        join("$BUILD_DIR", "${PROGNAME}.bin"),
-        env.VerboseAction(
-            " ".join([
-                '"%s"' % join(platform.get_package_dir("tool-dfuutil") or "",
-                     "bin", "dfu-suffix"),
-                "-v %s" % vid,
-                "-p %s" % pid,
-                "-d 0xffff", "-a", "$TARGET"
-            ]), "Adding dfu suffix to ${PROGNAME}.bin"))
 
     env.Replace(
         UPLOADER=_upload_tool,
